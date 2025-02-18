@@ -56,7 +56,7 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="https://brucegeli.github.io/" target="_blank">Ge Li,</a><sup>*</sup>,</span>
+                <a href="https://brucegeli.github.io/" target="_blank">Ge Li</a>,</span>
                   <span class="author-block">
                     Dong Tian,
                   </span>
@@ -157,7 +157,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            This work introduces Transformer-based Off-Policy Episodic Reinforcement Learning (TOP-ERL), a novel algorithm that enables off-policy updates in the ERL framework. In ERL, policies predict entire action trajectories over multiple time steps instead of single actions at every time step. These trajectories are typically parameterized by trajectory generators such as Movement Primitives (MP), allowing for smooth and efficient exploration over long horizons while capturing high-level temporal correlations. However, ERL methods are often constrained to on-policy frameworks due to the difficulty of evaluating state-action values for entire action sequences, limiting their sample efficiency and preventing the use of more efficient off-policy architectures. TOP-ERL addresses this shortcoming by segmenting long action sequences and estimating the state-action values for each segment using a transformer-based critic architecture alongside an n-step return estimation. These contributions result in efficient and stable training that is reflected in the empirical results conducted on sophisticated robot learning environments. TOP-ERL significantly outperforms state-of-the-art RL methods. Thorough ablation studies additionally show the impact of key design choices on the model performance.
           </p>
         </div>
       </div>
@@ -287,7 +287,14 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@inproceedings{
+        li2025toperl,
+        title={{TOP}-{ERL}: Transformer-based Off-Policy Episodic Reinforcement Learning},
+        author={Ge Li and Dong Tian and Hongyi Zhou and Xinkai Jiang and Rudolf Lioutikov and Gerhard Neumann},
+        booktitle={The Thirteenth International Conference on Learning Representations},
+        year={2025},
+        url={https://openreview.net/forum?id=N4NhVN30ph}
+        }</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
