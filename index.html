@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>TOP-ERL: Transformer-based Off-policy Episodic RL (ICLR25 Spotlight)</title>
+  <title>TOP-ERL: Transformer-based Off-policy Episodic Reinforcement Learning (ICLR25 Spotlight)</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -52,7 +52,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">TOP-ERL: Transformer-based Off-policy Episodic RL</h1>
+            <h1 class="title is-1 publication-title">TOP-ERL: Transformer-based Off-policy Episodic Reinforcement Learning</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -112,23 +112,22 @@
   </div>
 </section>
 
-
-<!-- Teaser video-->
+<!-- ERL -->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
         <!-- Your video here -->
-        <source src="static/videos/Critic_animation_edit.mp4"
+        <source src="static/videos/mp_demo.mp4"
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        In TOP-ERL, we utilize Transformers as an action sequence value predictor, training it via the N-step future returns.
+        Episodic RL often uses the movement primitves (MPs) as a paramterized trajectory generator.  A simple illustration of using MPs is shown in the video.
       </h2>
     </div>
   </div>
-</section>
-<!-- End teaser video -->
+</section>  
+
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -147,17 +146,18 @@
 </section>
 <!-- End paper abstract -->
 
-<!-- Teaser video-->
+
+<!-- Critic -->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
         <!-- Your video here -->
-        <source src="static/videos/mp_demo.mp4"
+        <source src="static/videos/Critic_animation_edit.mp4"
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        Episodic RL often uses the movement primitves (MPs) as a paramterized trajectory generator. In TOP-ERL, we use the ProDMP for fast computation and better initial condition enforcement. A simple illustration of using MPs can be seen as follows:
+        In TOP-ERL, we utilize Transformers as an action sequence value estimator, to evaluate the value of executing a sequence of actions from an intermediate state in the episode. We training the critic via the N-step future returns.
       </h2>
     </div>
   </div>
